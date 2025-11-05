@@ -1,0 +1,49 @@
+/* Estilos generales */
+
+body{
+    background-color: black ;
+}
+
+/* estilos de header */
+
+header nav img {
+    width: 115px;
+    height: 115px;
+}
+
+header, footer, main{
+    text-align: center;
+}
+/* estilos de imagenes */
+img{
+    width: 200px;
+}
+
+/* estilos de main */
+
+.texto{
+    text-align: center;
+    color: whitesmoke;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+section ol li{
+    border-top: 2px solid whitesmoke;
+}
+/* estilos de footer */
+footer{
+    background-color: rgb(33, 33, 33);
+}
+
+.contenedor-tarjeta{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tarjeta{
+    background-color: rgb(33, 33, 33);
+}
