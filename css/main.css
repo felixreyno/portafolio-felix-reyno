@@ -1,7 +1,11 @@
 /* Estilos generales */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: black ;
+    background-color: #0D0D0D ;
 }
 
 /* estilos de header */
@@ -11,19 +15,19 @@ header nav img {
     height: 115px;
 }
 
-header, footer, main{
+header, footer{
     text-align: center;
 }
-/* estilos de imagenes */
-img{
-    width: 200px;
-}
-
 /* estilos de main */
+
+.texto-titulo{
+    text-align: center;
+    color:#E7E7E7;
+}
 
 .texto{
     text-align: center;
-    color: whitesmoke;
+    color: #B6B6B6;
 }
 
 ul, ol{
@@ -33,10 +37,14 @@ ul, ol{
 section ol li{
     border-top: 2px solid whitesmoke;
 }
+
 /* estilos de footer */
+
 footer{
-    background-color: rgb(33, 33, 33);
+    background-color: #ffffff10;
 }
+
+/* inicio */
 
 .contenedor-tarjeta{
     display:flex;
@@ -44,6 +52,80 @@ footer{
     align-items: center;
     margin-bottom: 50px;
 }
+
 .tarjeta{
-    background-color: rgb(33, 33, 33);
+    background-color:#ffffff10;
+    margin: 30px;
+    border-radius: 20px;
+    border: 1px solid #ffffff20;
+}
+
+/* estilos de botones */
+
+.boton-tarjeta{
+    background-color: #5f5f5f;
+    border-color: #5f5f5f;
+    border-radius: 15px;
+}
+
+.boton-tarjeta:hover{
+background-color: #B6B6B6;
+border-color: #B6B6B6;
+}
+
+/* pagina de proyectos */
+
+.proyectos {
+  padding: 40px 20px;
+  text-align: center;
+  color:  #0D0D0D;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  gap: 30px;
+  padding: 15px;
+  max-width: 1100px;
+}
+.proyectos-grid h3{
+    display: grid;
+    place-items: center;
+}
+.proyecto-tarjeta {
+  background: #ffffff10;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid #ffffff20;
+}
+
+.proyecto-tarjeta:hover {
+  transform: translateY(-8px);
+transition: 1s;
+}
+
+.proyecto-tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.proyecto-tarjeta a{
+    width: 90%;
+    margin: 0.5rem
+}
+
+@media (max-width: 900px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+    .proyecto-tarjeta a {
+    width: 50%;
+    font-size: 70%;
+  }
 }
