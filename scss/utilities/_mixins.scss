@@ -1,0 +1,29 @@
+// Centrado
+@mixin center-text {
+  text-align: center;
+}
+
+// Display flex centrado
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+// Tarjetas
+@mixin card {
+  background-color: $card-bg;
+  border-radius: 20px;
+  border: 1px solid $card-border;
+}
+
+// Botones
+@mixin button-style($bg, $hover) {
+  background-color: $bg;
+  border-color: $bg;
+
+  &:hover {
+    background-color: $hover;
+    border-color: $hover;
+  }
+}

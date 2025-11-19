@@ -1,0 +1,17 @@
+// UTILITIES
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+// BASE
+@import 'base/reset';
+
+// PAGES
+@import 'pages/home';
+@import 'pages/proyectos';
+
+//botones
+@import 'components/botones';
+
+// LAYOUT (solo media queries)
+@import 'layout/mq-mobile';
+@import 'layout/mq-tablet';

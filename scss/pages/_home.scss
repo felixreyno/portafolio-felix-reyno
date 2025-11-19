@@ -1,0 +1,31 @@
+.texto-titulo {
+  text-align: center;
+  color: #E7E7E7;
+}
+
+.texto {
+  text-align: center;
+  color: #B6B6B6;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+section ol li {
+  border-top: 2px solid whitesmoke;
+}
+
+.contenedor-tarjeta {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tarjeta {
+  background-color: #ffffff10;
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px solid #ffffff20;
+}
